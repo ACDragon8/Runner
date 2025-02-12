@@ -6,10 +6,20 @@ Runner
 
 let config = {
     type: Phaser.AUTO,
-    width: 640,
-    height: 480,
-    scene: {Menu, Play}
+    width: 1080,
+    height: 720,
+    physics: {
+        default: 'arcade',
+        arcade: {
+            debug: true
+        },
+
+    },
+    scene: [Menu, Play]
 }
 
 let game = new Phaser.Game(config)
+
+let width = 1080
+let height = 720
 
