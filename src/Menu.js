@@ -7,6 +7,7 @@ class Menu extends Phaser.Scene {
         this.load.image('demo', './assets/demo.png')
         this.load.image('background', './assets/Background.png')
         this.load.image('tank','./assets/tank.png')
+        this.load.image('mine','./assets/mine.png')
         this.load.spritesheet('tank-anims','./assets/tank-anims.png', {
             frameWidth: 128,
             frameHeight: 64,
@@ -18,7 +19,7 @@ class Menu extends Phaser.Scene {
 
         this.anims.create({
             key: 'move',
-            frameRate: 8,
+            frameRate: 4,
             repeat: -1,
             frames: this.anims.generateFrameNumbers('tank-anims', {start:0, end: 1})
         })

@@ -22,4 +22,5 @@ let game = new Phaser.Game(config)
 
 let width = 1080
 let height = 720
+let speed = 2
 
