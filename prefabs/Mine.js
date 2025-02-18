@@ -7,5 +7,10 @@ class Mine extends Phaser.Physics.Arcade.Sprite {
 
     update() {
         this.x -= speed
+
+        if(this.x < 0) {
+            this.y = height - (height / 2 *Math.random())
+            this.x = width
+        }
     }
 }
